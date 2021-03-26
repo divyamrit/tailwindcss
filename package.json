@@ -1,0 +1,23 @@
+{
+  "name": "Rays",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw:build": "NODE_ENV=development postcss build src/css/tailwind.css -o public/css/tailwind.css --verbose -w",
+    "tw:watch": "watch 'npm run tw:build' ./public/HTML"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.10",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4"
+  },
+  "dependencies": {
+    "postcss-cli": "^8.3.1",
+    "watch": "^1.0.2"
+  }
+}
